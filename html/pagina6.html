@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Artesana</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    body {
+      background-image: url('../imagenes/f2.png');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo6.png" alt="Imagen" width="800" height="500" class="top-image">
+    <p id="texto">Aprendí a hacer artesanías gracias a las enseñanzas de mi esposo. Cuando lo conocí, él ya sabía hacer todo este oficio desde hace años. 
+He notado que hay más turismo desde que fue nombrado pueblo mágico, si ha crecido la demanda de nuestras piezas artísticas, pero también veo consecuencias negativas por ejemplo ya hay mucha basura en las calles. No respetan los turistas el espacio público. Como la gente va caminando y consumiendo es fácil para ellos tirar su basura a la calle. Como son personas ajenas hacen lo que quieran. 
+Comprar una casa o vivir aquí en el centro es muy caro, se ha elevado con los años, pero no de manera proporcional. Los precios se han disparado bastante. 
+Hablando de otras cosas, les explicare como es el proceso que nosotros hacemos para hacer las artesanías. El barro desde el inicio lo ponemos a secar, en la calle para que el sol lo seque y los carros pasen sobre él. Eso nos ayuda que se le salga las piedras y después de ahí comienza un proceso que se llama harnear la tierra que ayuda a separar las piedritas del polvo que es lo que usamos nosotros (refiriéndose al polvo).  Después de ahí que ya está hecho el polvo se hace una mezcla con plumilla y agua para que las piezas no se rompan y tenga consistencia. Se forma una plastilina que ya puede moldearse y trabajar de lleno en la pieza. Cuando se termina de esculpir se deja secar hasta que se le salga todo el exceso de humedad, después de ahí depende el tamaño de la pieza puede tardar entre 15 o 20 días. A continuación, se lleva a quemar por 3 horas en un horno y finalmente se decora. 
+<img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p> <img class="arrow-image" src="arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='../html/tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "Lamentablemente el barro ya subió casi un 50% de lo que nos costaba, la pintura igual ya es muy cara, pero es parte fundamental para las piezas. Los precios no se mantienen fijos. Las personas valoran mi trabajo en general, pero hay de todo, hay varios que llegan y preguntan cuánto cuesta e inmediatamente dicen “¿por qué tan caro”? y se le explica el proceso que lleva y también que las piezas son de alta calidad en sus materiales ya que la pintura no se desgasta tan rápido y el barro es resistente. Pero también hay gente que si valora tu trabajo y no te reprocha el precio. No regatees los precios de los artistas, no le puedes poner el precio al trabajo de otra persona porque no sabes la dedicación que lleva esa pieza. Todo lleva su tiempo y esfuerzo. Yo me la paso bien aquí, porque la gente valora mi trabajo y me felicita. Me dice que mis artesanías están muy bonitas y te vas contento con esas opiniones. Me siento muy feliz de haber conocido a mi esposo porque gracias a el aprendí a trabajar con el barro, hacemos muy buen equipo y lo amo mucho. ";
+    });
+  </script>
+</body>
+</html>

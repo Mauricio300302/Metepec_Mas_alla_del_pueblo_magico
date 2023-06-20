@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Señor</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    body {
+      background-image: url('../imagenes/f2.png');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo9.png" alt="Imagen" width="800" height="450" class="top-image">
+    <p id="texto">Procedo del puerto de Veracruz, estoy aquí por dos cosas. Porque en Veracruz está haciendo mucho calor afectando mi salud y porque estoy buscado un amigo que vive aquí en Metepec pero no le he podido encontrar. Probablemente se fue a la frontera y no he podido encontrarlo eso es lo que me ha movido principalmente a estar acá. Desde hace mucho tiempo que nos conocemos.
+Actualmente me estoy alojando con un compadre en el centro, me hace el favor de quedarme a dormir en su negocio. 
+Yo conozco Metepec desde 1998, hoy ha cambiado mucho porque la población ha crecido enormemente, realmente está desbordada la población y no hay muchos lugares para vivir dignamente como clase trabajadora.
+Te puedo asegurar que también hay preocupación del gobierno federal, porque no hay suficientes apoyos para todos. Pienso que los precios se tienen que incrementar de acuerdo con la economía de manera regulada, las autoridades tienen que vigilar el control de precios porque si no se sale del control. Eso no le conviene a las personas porque si no solo estarán puros ricos consumiendo las maravillas de aquí. 
+<img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='../html/tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "Me ha costado trabajo llegar aquí cuando antes era bastante barato, aparte los precios de la comida para mí no son accesibles. Tengo que cocinar, aunque sea unos frijoles o lentejas para sobrevivir.  Muchos amigos me han comentado que por ejemplo si uno quisiera comprar una casa aquí en el mero centro está muy caro al igual que las rentas en estos últimos 20 años. ";
+    });
+  </script>
+</body>
+</html>

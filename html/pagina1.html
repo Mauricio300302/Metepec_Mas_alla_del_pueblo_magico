@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bruno</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    body {
+      background-image: url('../imagenes/f2.png');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo1.png" alt="Imagen" width="800" height="450" class="top-image">
+    <p id="texto">Hola, soy Bruno Diaz. Soy del mero centro de Metepec a un par de cuadras. De muy morrito me fui a vivir ahí ya que antes vivíamos en el extinto distrito federal. Mi abuela nos recibió en su casa y pues aquí andamos.
+La vida aquí ha cambiado bastante. La urbanización ha pegado fuerte en la comunidad, antes había más milpas y la cosecha del maíz era la principal fuente económica del pueblo. Actualmente pues con toda esta onda de pueblo mágico ya lo que deja más varo es el turismo en el centro, igual hay negocios como talleres o asi, pero son negocios familiares. He visto como la energía de mi pueblo se ha ido transformando, la gentrificación ha traído muchas plazas comerciales y residenciales que pues provoca la llegada de un grupo social más privilegiado.  Sabes estos últimos años se ha encarecido mucho los servicios básicos, cuando antes aquí era lo más barato del Edomex. 
+<img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "Metepec esta pasando por un proceso muy extraño ya que esta siendo un hibrido entre pueblo-ciudad, esta transición urbana se siente bastante rara como si fuese un limbo. La identidad de aquí ha cambiado, sin duda la llegada de personas ajenas ha causado un cambio en la relación de los individuos.  Tambien la movilidad ha cambiado, las calles están hechas para los automóviles y no para las personas, el derecho a la movilidad está siendo violentado. El artesano está siendo olvidado en Metepec, el artesano no existe dentro de esa lógica económica. Esa discriminación hacia esas personas es bien culera la verdad. Las zonas encarecidas y las marginadas tienen un contraste bastante fuerte, a tres calles del centro puedes notarlo. A pesar de todos estos problemas negativos que he visto y vivido en Metepec, he sido muy feliz aquí. La verdad es que el desmadre aquí es bastante chido, tengo muchos amigos desde hace años que sigo frecuentando. Recuerdo una vez que iba con mi papá cargando unos garrafones de agua en un diablito y cruzamos una calle que tenia una pendiente muy cabrona y me fui de hocico jajaja fue bastante divertido ese día."
+;
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beatriz</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    body {
+      background-image: url('../imagenes/f2.png');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo10.png" alt="Imagen" width="800" height="400" class="top-image">
+    <p id="texto">Siendo estudiante aquí en la universidad en la licenciatura de Biología Ambiental estuve como muy intermitente entre ciertos períodos haciendo estancias académicas. Viví muchos años en Metepec y ahorita resido en otro lado.
+Actualmente sigo visitando a la familia, mi abuelo hace más de 30 años buscó un terreno por estos lugares y encontró un lugar accesible y mi demás familia se quedó ahí. 
+Me preocupa el impacto ambiental, el hecho de que Metepec sea aledaña al corredor industrial eso aumenta tanto la plusvalía de la zona asi como también la contaminación, antes había muchísimos espacios verdes, había milpas y cultivos. Las zonas residenciales han incrementado, la casa de mis papás está muy rodeada de estas zonas. Si lo analizamos en el plano socioeconómico también ha incrementado en cuanto a los servicios como pago del agua o el predial. 
+El servicio del agua ha disminuido muchísimo, hay momentos donde ya no llega como antes lo hacía. Mis papás viven frente a uno de los principales pozos que abastece toda la colonia, pero debido a la llegada de los residenciales ha disminuido la presión y el abastecimiento. Este recurso tan valioso se lo llevan estas personas que viven en los residenciales como si tuvieran una preferencia.  La gente que no vive en estos residenciales no siempre cuenta con agua. 
+<img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='../html/tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "Ya mucha gente es desconocida en la colonia donde vivía, ni te devuelven el saludo. Incluso en cuestión de seguridad llegaron personas relacionadas con el narcotráfico y con la trata de personas. Entonces uno no se espera que exista ese tipo de situaciones, incluso cuando era pequeña tuve algunos encuentros infortunados con personas agresoras. Llegan personas ajenas a Metepec a impactar sobre la seguridad y el bienestar de la gente que radica ahí.Mi mamá forma parte de un grupo de seguridad de la colonia, se ha empezado a generar mayor divulgación de este tipo de incidentes y ya es mayor la comunicación que existe paraque cuidarse entre todos. Pasando a anécdotas más felices, hace mucho tiempo cuando estaban los camellones de paseo Tollocan todavía había muchos árboles. Mi familia iba mucho para allá a convivir, entre todos los tíos y primos hacíamos picnic porque había mucha naturaleza todavía. Pero después de que ampliaron estas avenidas súper grandes, talaron todos los árboles de ahí pues ya difícilmente se puede transitar por esa zona y hacer ese tipo de convivencias familiares porque incluso había accesos pequeños riachuelos con agua muy limpia. ";
+    });
+  </script>
+</body>
+</html>

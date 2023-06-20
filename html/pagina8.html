@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Artesana</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    body {
+      background-image: url('../imagenes/f2.png');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo8.png" alt="Imagen" width="800" height="450" class="top-image">
+    <p id="texto">Soy originaria de Metepec, desde que era niña he vivido aquí al igual que mis papás y abuelos que ya fallecieron. Hemos estado todos en familia, muy pocos se han se han trasladado a otros lugares.
+Anteriormente mi mamá se iba a vender a Iztapalapa, San Antonio y en otras zonas de la Ciudad de México, pero después pues por su edad dejo de trabajar. Sigo yendo a Ixtapaluca de vez en cuando a visitar familiares y amigos. 
+Ha cambiado muchísimo aquí, estos locales donde vendo mis ollas de barro apenas los remodelaron porque aquí anteriormente era una plaza y la que es actualmente la plaza central antes solo había un kiosco. Eso tiene más de 25 años. 
+Uno de los cambios que más destacan es que ya hay alumbrado, las calles ya no son de tierra.  Pero en general se ha concentrado el reacondicionamiento de las calles en el centro porque las orillas han sido muy olvidadas. Han puesto una que otra lamparita, pero anteriormente no había nada y sigue sin haber un cambio notable. 
+Metepec está sufriendo de mucha inseguridad más que nada porque a cada rato se escucha que ya asaltaron o robaron una casa. Necesitamos apoyo del ayuntamiento, que nos pusiera más vigilancia porque además hay muchos que se dedican a vender drogas y provoca violencia entre pandillas. 
+Desde que aquí fue declarado pueblo mágico si se ha notado un cambio enorme, porque anteriormente había muchas milpas y ahora ya hay solo casas o negocios.
+
+<img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='../html/tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "Como ya no se produce la tierra porque ya no hay milpas las verduras se han encarecido, simplemente el maíz para las tortillas era muy barato, pero actualmente ya se compra de otros lados porque aquí ya definitivamente no se produce nada de alimentos. Antes generábamos dinero con la cosecha, la artesanía también se ha vendido desde que tengo memoria, pero no generan los mismos ingresos que cultivar la tierra. Mis papás desde que yo nací llevaron pan a la mesa gracias a la alfarería, mis dos abuelos maternos también se dedicaron a esto de fabricar ollas de barro. Ahorita pues ya casi nadie de mi familia hace cazuelas, solo son dos hermanos míos que saben hacer todas estas artesanías.  Yo me dedico a venderlas, yo no las sé hacer. Solamente las decoro, cuando mis papás vivían yo les ayudaba a decorar todas las cazuelas y platitos. Coloco un instrumento que les llamamos pintaderas, es un alambre que lo deformamos con distinto tipos de grecas para controlar el grosor de la tinta que decorara el barro. El tiempo para decorar varía según el tamaño. La venta en estos últimos meses ha estado baja, pero pues también no nos podemos quejar ya que, aunque sea poco el dinero que sale de las ventas Dios nos socorre dándonos pan en la mesa, ya es ganancia sacar para comer. Desde niña he sido muy feliz aquí, cuando salí de sexto de primaria ya no seguí estudiando. Ayudé a mis papás con la alfarería, me dio mucho gusto haber podido apoyarles en su vida. Si gustan venir a comprar sus ollas, aquí los esperamos en el centro de Metepec, en la plaza del artesano local #17 de 11:00am hasta las 6:00pm.";
+    });
+  </script>
+</body>
+</html>

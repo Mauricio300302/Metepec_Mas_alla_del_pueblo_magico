@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guirnalda</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+    body {
+      background-image: url('../imagenes/f2.png');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo4.png" alt="Imagen" width="800" height="400" class="top-image">
+    <p id="texto">Toda mi vida he estado en Metepec, mi familia ha vivido aquí desde antes que yo naciera. Todos han sido ahí de Metepec o han venido de otros lados. Mi mamá es de Texcoco y mi papá es de San Luis Potosí y de hecho la mayoría de mi familia vive en Texcoco. 
+Entonces pues aquí en Toluca bueno, más en específico en Metepec pues somos solamente yo y mi familia nuclear. Mi papá tuvo una época en la que se fue a vivir a Texcoco, ahí conoció a mi mamá y él tuvo que venir para acá hacia Toluca a estudiar su licenciatura, él estudió economía.
+ Por ese motivo fue que se vino a vivir acá porque pues aquí estudió, después aquí encontró trabajo y acá se juntó con mi mamá y nos tuvieron a nosotras.  Entonces pues básicamente asi fue como mi vida inicio aquí. 
+Actualmente la plusvalía ha aumentado demasiado, porque digamos que yo sí fui testigo de cómo fue creciendo alrededor, más en específico ahí en la localidad en la que vivo. Digamos que en los alrededores fueron estableciéndose pues el seguro (hospital público) y muy cerca ya pusieron como una plaza comercial, hay un cine, supermercado y muchos parques.  También hay escuelas cerca, o sea creo que todos los servicios que hay están a la mano. Además, que por ejemplo, también en el transporte la base de los camiones está muy cerca y todos esos aspectos han hecho que haya crecido la urbanización durante los últimos 20 años porque en realidad esa esa localidad no es están tan nueva yo creo que tiene unos 30 años más o menos. Y es que ahí nacieron muchas colonias porque se construyeron debido al terremoto de 1986 entonces mucha gente que se quedó sin hogar en la Ciudad de México como alternativa fueron reubicadas aquí.  El desarrollo en los últimos 20 años ha sido gigante desde que Metepec fue nombrado pueblo mágico.
+ Ha cambiado mucho aquí, específicamente el pueblo en sí cambió en un aspecto más visual, se han encargado mucho de hacerlo ver “bien” a los turistas. Las calles están muy limpias, las casas están pintadas de colores muy alegres y es muy usual ver que las calles principales y aledañas al centro tienen un muy buen aspecto y están muy limpias. Puedo decir que también son seguras porque yo he caminado pues muy noche en esas zonas y pues afortunadamente nunca he sufrido alguna clase de acto violento. 
+<img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='../html/tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "La verdad también se ha encarecido mucho, cuando haces tu despensa de tienes que comprar fruta, verdura, carne y los precios son altísimos. Mi papá vive en Zinacantepec y mi hermana vive en san Mateo Atenco, cuando ellos nos acompañan a nosotros a comprar al mercado nos dicen constantemente que aquí es bastante caro a diferencia de San Mateo. Una problemática que veo en donde vivo yo, es el desvalijamiento de vehículos. Entre vecinos nos comunicamos para estar al pendiente de las calles, sobre todo en la noche es muy dado este asunto de que abren los carros, les quitan llantas o refacciones. Cuando yo era una niña, en la privada donde sigo viviendo había más niños y pues siempre salíamos a jugar. Inventábamos muchos juegos, mi infancia fue estar diario en la calle, llegaba de la escuela hacia mi tarea y pues me salía a jugar hasta que ya era noche. Es mi recuerdo más feliz viviendo en Metepec. ";
+    });
+  </script>
+</body>
+</html>
+

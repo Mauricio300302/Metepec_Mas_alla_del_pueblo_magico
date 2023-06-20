@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Artesano</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    body {
+      background-image: url('../imagenes/f2.png');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo7.png" alt="Imagen" width="800" height="600" class="top-image">
+    <p id="texto">Soy originario de Metepec, nací y crecí aquí. En este barrio donde vivo tradicionalmente se fabrican las ollas, cazuelas y demás. Con el pasar de los años se comenzaron a hacer artesanías como alcancías, macetas, arboles de la vida, entre otras cosas.  Mi familia, desde mis abuelos son descendientes de aquí.
+Metepec se ha transformado a través de los años, ya que antes había muchas milpas y ahora hay más centros comerciales, plazas, bares, etcétera. La agricultura ha sido desplazada. 
+Estoy orgulloso de ser parte del museo Vicente Fernández. Fue pintor, escultor, modelador de barro y herrero, además fue mi abuelo. Tiene 15 años que abrió esta casa sus puertas, quiero destacar que este museo es autónomo ya que no hay entrada de gobierno ni de nadie. Toda la administración y finanzas de aquí está controlada por pura familia.  Últimamente el municipio se ha querido acercar a nosotros para tener injerencia, pero preferimos mantener en familia este museo que nos ha costado mucho esfuerzo y dedicación mantener. 
+Sí hubo un tiempo en que nos acercamos a las autoridades para tener apoyo, no voy a decir nombres ya que prefiero que esto quede en anónimo. Pero ciertas personas se negaron a venir aquí y darnos ayuda para el museo. Por eso fue que mi abuelo se levantó en armas y construyo el museo con apoyo de mis papás y tíos. 
+Siempre ha habido turismo, pero ahora que fue nombrado pueblo mágico ha llegado mucha más gente, pero la desventaja que nosotros tenemos es que desgraciadamente les compran a los revendedores que nosotros les surtimos. Damos un precio y ellos lo triplican, nosotros como artesanos legítimos perdemos un poco de porcentaje por la reventa. <img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='../html/tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "Afortunadamente tenemos clientes de muchos lugares del país de Guerrero, Guanajuato, Celaya Querétaro o Veracruz. Vienen desde allá para para pedir las paellas, braceros, alcancías, cazuelas, macetas y todo eso para decorar sus casas.  Hemos notado también la presencia de personas que vienen el otro lado como los japoneses, estadounidenses y canadienses. Particularmente a nosotros no nos perjudica porque nosotros les vendemos nuestras piezas y ellos las van a ofrecer allá. Son como proveedores de nosotros y van a proporcionar nuestra mercancía a su lugar de origen. En general aquí a incrementado la delincuencia, hay robos de automóviles y asaltos a los transeúntes. Incluso los mismos policías te roban ya que te pueden confundir con personas que se dedican a quitarle cosas a la gente, hay mucha extorsión por parte de la “seguridad” publica. Las enseñanzas de mi abuelito Vicente Fernández me han ayudado para poder vivir con tranquilidad dedicándome a esto, la carpintería fue lo que más aprendí de él y también la artesanía.  Me dijo “si no lo aprendes es por pendejo, pero si tú lo agarras vas a levantar todo esto. Vas a superar al maestro los grandes maestros vienen de la calle”.Los que lleguen a leer esto, visítenos. No es un museo de gran categoría, pero sí con grandes enseñanzas. Estamos ubicados aquí en C. Ignacio Comonfort #603, barrio de Coaxustenco, Metepec.  Lunes, martes y viernes de 9:00am a 6:00pm también sábados de 9:00am a 5:00pm y domingos de 9:00am a 3:00pm.";
+    });
+  </script>
+</body>
+</html>

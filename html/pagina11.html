@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sofia</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    body {
+      background-image: url('../imagenes/f2.png');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo11.png" alt="Imagen" width="800" height="450" class="top-image">
+    <p id="texto"> Vivo en los límites de Metepec casi colindando con Toluca.  Llevo viviendo aquí desde hace 19 años, llegue cuando apenas tenía 3 años, era un bebé. Soy originaria de Colombia, mi mamá trabajaba en un bar y conoció a mi papá porque era un cliente recurrente. Hubo química entre ellos, después de casarse y tenerme decidieron venirse a vivir aquí a México. 
+Mi papá es toluqueño, siempre ha tenido raíces acá en el Estado de México. Mi familia se asentó en una colonia muy vieja, se diseñó desde los años ochenta. No ha habido muchos cambios en su aspecto, pero está bonita y bien conservada. 
+Aquí hay mucha diversidad, tenemos unas vecinas que son de Haití y he visto mucho extranjero que viene a rentar por temporadas y luego se van. A partir de que fue nombrado pueblo mágico si he visto un cambio en el centro de Metepec y sus alrededores. Hay más inversión y se han construido más lugares de entretenimiento. 
+ Antes de ser nombrado “pueblo mágico” el municipio no invertía en remodelaciones de las calles porque no había el suficiente presupuesto, estaba muy descuidado. Incluso recuerdo que eran pocas las calles que estaban pavimentadas. 
+<img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='../html/tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "En general si considero que ha cambiado todo Metepec, claro que hace falta más mejoramiento en ciertas zonas, pero lentamente van transformándose. Los pueblos van evolucionando con el tiempo, crecen y se vuelven ciudades. La influencia de Toluca igual a provocado que se perciban cambios aquí a través de los años. Afortunadamente vivo en un lugar en el que no hay muchos problemas como falta de agua o inseguridad en las calles, pero sí he sabido que en otras colonias menos favorecidas si viven con esas problemáticas. Principalmente la poca disponibilidad de agua potable es lo que afecta a las comunidades más alejadas del centro de Metepec. Cuando yo estaba muy chiquita y todavía no nacía mi hermana, mi papá nos llevaba a mi mamá y a mí al calvario. Recuerdo que siempre nos subíamos hasta arriba donde esta la iglesia y pues yo estaba bien loquita, por andar jugando me caí de las escaleras y me metí un madrazo por no pisar bien los escalones. También me acuerdo cuando iba de niña al quimera, es un festival que se hace a finales de septiembre y a principios de octubre. Hay mucha música de todo tipo y se hace una fiesta en grande en el pueblo. Solía ir mucho con mi familia.";
+    });
+  </script>
+</body>
+</html>

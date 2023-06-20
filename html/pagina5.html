@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paletas jicaleta</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    body {
+      background-image: url('../imagenes/f2.png');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo5.png" alt="Imagen" width="800" height="550" class="top-image">
+    <p id="texto">Trabajo aquí vendiendo jicaletas en el calvario desde hace tres años. He notado que llegan más turistas en la calle de Comonfort que está más dedicada a toda la artesanía que es originaria de Metepec. Lo más representativo de aquí es el árbol de la vida, es una figura de barro que representa a los barrios y la identidad de las familias. 
+Se ha encarecido aquí el centro demasiado, por el efecto de la pandemia ya no venían los turistas, pero ahora que regresamos a la normalidad las cosas han mejorado pero los precios de servicios básicos no han bajado como se esperaba. 
+En el centro de Metepec asi como el calvario ha aumentado la seguridad, cada vez hay más policías y patrullas vigilando la zona. Han abierto teatros, centros comerciales, antros y mucho entretenimiento. 
+<img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='../html/tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "En el centro es muy difícil acceder a la vivienda, si no es aquí tendría que irme a las orillas del pueblo. Como ha crecido aquí la densidad de la población se ha vuelto más violento Metepec excepto en el centro porque como ya había dicho anteriormente ahí la vigilancia se concentra. Han habido cambios buenos y malos, pero principalmente la delincuencia es lo que más nos afecta a los que hemos vivido aquí a través de los años.";
+    });
+  </script>
+</body>
+</html>

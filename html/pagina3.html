@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aaron</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    body {
+      background-image: url('../imagenes/f2.png');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo3.png" alt="Imagen" width="800" height="500" class="top-image">
+    <p id="texto">Me llamo Aarón Morelos García. Vivo en Metepec desde los 4 años. llegue a vivir ahí por herencia de propiedades de mi abuelo, él llegó ahí por parte de mi bisabuelo que originalmente vinieron de Luvianos. Mi bisabuelo participó en la Revolución, le dieron parcelas aquí en el área de Metepec y pues gracias a él tengo donde vivir con mis papás 
+
+Ha habido muchos cambios por aquí, recuerdo que cuando era pequeño salía a jugar y las calles eran de tierra prácticamente. Ahorita ya creció demográfica, geográfica e infraestructuralmente. Desde que Metepec fue nombrado pueblo mágico todavía llegaron más cambios al pueblo, desde mi percepción la infraestructura del centro se ha ido modificando, recuerdo que cuando éramos niños mi papá nos llevaba a comer con mi abuela… como ella es del barrio de San Miguel íbamos seguido ahí y pasábamos caminando por el Centro de Metepec. También nos llevaba al Calvario a jugar o cosas así. Y ahora pues ya veo que podemos ir a distintos lugares como Galerías, centros comerciales, museos, al teatro y anteriormente no existía eso. La movilidad también ha cambiado, cada vez hay más vehículos y por ende más tráfico en zonas donde antes no pasaba ni un alma.
+
+Actualmente veo que el pueblo se está polarizando mucho, la forma en cómo se vive en el municipio de Metepec ha cambiado ya que, en las periferias, dentro del municipio hay colonias como por ejemplo San Gaspar, San Sebastián, San Lucas que no le toman mucha importancia. Como el recurso público se va para la parte centro o las partes donde se concentran los grupos de poder dejan en el olvido otras zonas, yo lo veo de esa manera.
+<img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='../html/tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "Te das cuenta en la carretera de La Virgen a la carretera de San Gaspar, o sea  no tienen la misma calidad de asfalto. Por ejemplo, en esos territorios o la parte céntrica te das cuenta cómo invierten mucho recurso público. Y en las periferias, no se les da la misma atención, ya que ellos mismos tienen que administrarse autónomamente y lo vemos en el sistema pluvial ellos siguen usando pozos y en el centro de Metepec ya es un agua potable muy limpia directamente de tuberías. Todo ese tipo de aspectos de administración pública son un gran problema y en cuanto a los efectos económicos cada vez se ve una brecha más grande entre los espectros sociales, por ejemplo, la gente ya no tiene la capacidad económica de ir al centro o a las Galerías de Metepec, porque los precios han subido bastante. La creación de los nuevos residenciales está desplazando a las personas a nuevas direcciones, nuevas zonas. Las personas que viven en el centro, por ejemplo mi tía por parte de mi mamá que vivía ahí en el barrio céntrico tenía que pagar el predial a un precio muy elevado, el catastro ahí te piden cada año igual muy caro para que tengas tus certificaciones en regla. Entonces ella decidió vender esa propiedad donde vivía y se fue a las orillas, que en este caso se fue a San Sebastián. Esa es una de las cosas que personalmente he visto del fenómeno de la gentrificación. Tengo muchos recuerdos felices aquí con mi familia, la reunión con mis tíos siempre es en la casa de mi abuela, ahora de mi tía. Por ejemplo, son muy tradicionales ellos. En navidad, año nuevo o semana santa tratamos de estar juntos y convivir porque nunca sabes si estarás el día de mañana. Mi familia es bastante unida…";
+    });
+  </script>
+</body>
+</html>
+

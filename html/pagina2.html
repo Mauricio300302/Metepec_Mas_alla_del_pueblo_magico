@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dione</title>
+  <style>
+    @font-face {
+      font-family: 'px';
+      src: url('../fuentes/fuente.ttf') format('truetype');
+    }
+
+    .button {
+      font-family: 'px', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background-color: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    body {
+      background-image: url('../imagenes/f2.jpg');
+      background-size: cover;
+      font-family: 'px', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #texto {
+      position: relative;
+      border: 1px solid black;
+      padding: 20px;
+      color: black;
+      background-color: #DDD9D3;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .arrow-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .top-image {
+      margin-top: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imagenes/fo2.png" alt="Imagen" width="800" height="500" class="top-image">
+    <p id="texto">Llegue a vivir a Metepec desde 2017, llego mi familia ahí porque antes estaba viviendo en un lugar aledaño al aeropuerto de Toluca y era muy peligroso. Desde que llegamos siempre se me ha hecho muy seguro, no he escuchado de tantos atracos, los servicios está super completos. En Metepec no digo que no tenga ciertas cosas negativas, pero es mucho mejor que donde antes vivía.  
+Sí he notado cambios a través de estos 6 años que llevo viviendo ahí, voy a hablar desde la perspectiva de mi mamá… mi mamá es del estado de Hidalgo, ella llegó a Toluca hace un buen de años, entonces dice que le toco empezar en un lugar muy feo. No le veía potencial, lo máximo era plaza las américas. 
+Antes era muy económico comprar una casa porque nadie quería habitar ahí, Metepec era de los lugares más baratos para vivir en el Estado de México, no había tantas carreteras y estaba muy sucio, en las calles se hacía lodo con las lluvias. 
+Una vez que empiezan a llegar más servicios y remodelación del centro de Metepec, comencé a notar como los precios se elevaron en muchos aspectos. Las rentas subieron tanto que las personas tuvieron que irse a la periferia del pueblo.  Si hoy quisiera comprar una casa o un terreno en el centro de Metepec seria casi imposible, ya que está destinado para una clase social más alta. 
+<img class="arrow-image" src="../imagenes/arrow.png" alt="Flecha"></p>
+    <p> <button class="button" onclick="window.location.href='../html/tercera_pagina.html'">Otras anécdotas</button> </p>
+  </div>
+
+  <script>
+    document.querySelector('.arrow-image').addEventListener('click', function() {
+      document.getElementById('texto').textContent = "Mucha gente dice que Metepec es lo máximo, pero nada más conocen el centro turístico y los residenciales. Hay zonas por ejemplo como San Miguelito que es un lugar donde hay mucha pobreza, faltan servicios básicos. Me hace mucho ruido ver un contraste tan diferente, porque la situación es menos evidente viviendo en un residencial que estar en el barrio. Cuando se llega a hablar de Metepec, suelen asociarlo con Town Square o el centro, pero pues como comentó también hay muchas zonas marginadas que son olvidadas por la misma comunidad.  El centro es una zona de muchos comercios, hay mucho trabajo. Mi momento más feliz que yo recuerdo es cuando trabajaba en una cafetería y me reía mucho con mis compañeros de ese entonces, de vez en cuando si extraño estar ahí. No fue mucho tiempo, pero le agarre cierto cariño a ese empleo.  Me tuve que salir para darle prioridad a la escuela y porque no me respetaron mi horario de clases. ";
+    });
+  </script>
+</body>
+</html>
+
